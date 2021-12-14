@@ -1,0 +1,54 @@
+.gnb {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  .gnb-m-menu {
+    @include flexbox;
+    flex-direction: column;
+
+    a {
+      @include text-style(11, $black);
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 15px 0;
+      font-family: $font-second;
+      letter-spacing: 0.1em;
+      border-bottom: 2px solid $black;
+    }
+  }
+
+  .gnb-d-menu {
+    @include flexbox(around);
+    width: 100%;
+    height: 100%;
+
+    .gnb-menu-list {
+      @include flexbox;
+    }
+
+    .gnb-menu-item {
+      @include flexbox;
+      padding: 15px;
+      text-transform: uppercase;
+
+      a {
+        @include text-style(12, $black);
+        font-family: $font-second;
+      }
+    }
+
+    .gnb-util {
+      @include flexbox;
+
+      button {
+        padding: 10px;
+      }
+    }
+  }
+
+  @include responsive(T) {
+    @include flexbox;
+  }
+}
