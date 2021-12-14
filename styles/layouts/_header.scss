@@ -20,6 +20,10 @@
     height: 100px;
     border-bottom: 1px solid $black;
 
+    .inner {
+      padding: 0 20px;
+    }
+
     h1 {
       font-size: 48px;
       border: 0;
