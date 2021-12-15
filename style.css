@@ -413,7 +413,7 @@ section {
     display: none !important; } }
 
 .btn-arrow {
-  width: 44px;
+  width: 35px;
   height: 47px; }
 
 .ion,
@@ -3745,7 +3745,8 @@ section {
         font-size: 36px;
         line-height: 43px;
         letter-spacing: 0.05em;
-        color: #000; }
+        color: #000;
+        margin-bottom: 7px; }
       #work .text-box h2 {
         font-size: 14px;
         line-height: 17px;
@@ -3775,8 +3776,8 @@ section {
   height: 100%;
   background-color: #33362f; }
   #banner h1 {
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 23px;
+    line-height: 28px;
     letter-spacing: 0.05em;
     color: #fffef3;
     margin-bottom: 30px;
@@ -3785,7 +3786,7 @@ section {
     text-transform: uppercase; }
   #banner figure {
     padding-bottom: 258px;
-    background: bottom/cover no-repeat url(../../assets/images/ginger_s_eyes-33.jpg);
+    background: bottom/cover no-repeat url(../../assets/images/banner.jpg);
     border-radius: 23px; }
   #banner .text-box h2 {
     font-size: 14px;
@@ -3805,6 +3806,10 @@ section {
     font-weight: 400; }
   @media screen and (min-width: 768px) {
     #banner h1 {
+      font-size: 36px;
+      line-height: 43px;
+      letter-spacing: 0.05em;
+      color: #fffef3;
       margin: 10px 0 50px; }
     #banner .banner-info {
       display: flex; }
@@ -3819,7 +3824,132 @@ section {
 
 #reviews {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background-color: #fffef3;
+  border-bottom: 1px solid #000; }
+  #reviews .pic {
+    width: 100%;
+    height: 220px; }
+  #reviews .reviews-info {
+    position: relative;
+    font-weight: 400;
+    text-align: center; }
+    #reviews .reviews-info .title {
+      margin: 25px 0; }
+    #reviews .reviews-info .description {
+      font-size: 12px;
+      line-height: 22px;
+      letter-spacing: 0.1em;
+      color: #000;
+      font-style: italic; }
+    #reviews .reviews-info .date {
+      margin: 25px 0; }
+      #reviews .reviews-info .date span {
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.05em;
+        color: #000;
+        font-family: "Raleway", sans-serif; }
+      #reviews .reviews-info .date .author {
+        font-family: "Playfair Display", serif;
+        font-style: italic; }
+      #reviews .reviews-info .date i {
+        padding: 0 5px; }
+    #reviews .reviews-info h1 {
+      font-size: 23px;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+      color: #000;
+      font-weight: 400;
+      text-transform: uppercase; }
+      #reviews .reviews-info h1 span {
+        font-style: italic; }
+    #reviews .reviews-info h2 {
+      font-size: 10px;
+      line-height: 15px;
+      letter-spacing: 0.07em;
+      color: #000;
+      font-weight: 400;
+      text-transform: uppercase; }
+  #reviews .button-group {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: -16px;
+    width: 100%;
+    font-size: 0; }
+    #reviews .button-group a {
+      display: block; }
+    #reviews .button-group .prev {
+      transform: rotate(-180deg); }
+  @media screen and (min-width: 768px) {
+    #reviews article {
+      display: flex;
+      flex-flow: row-reverse; }
+    #reviews .pic {
+      width: 770px;
+      min-height: 400px; }
+      #reviews .pic img {
+        border-radius: 23px; }
+    #reviews .reviews-info {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 70px; }
+      #reviews .reviews-info .title {
+        margin: 40px 0 60px; }
+      #reviews .reviews-info .description {
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: #000;
+        font-style: italic;
+        margin-bottom: 60px; }
+      #reviews .reviews-info .date {
+        margin: 40px 0; }
+        #reviews .reviews-info .date span {
+          font-size: 12px;
+          line-height: 22px;
+          letter-spacing: 0.1em;
+          color: #000;
+          font-family: "Raleway", sans-serif; }
+      #reviews .reviews-info .button-group {
+        width: 90%;
+        bottom: 32px; }
+      #reviews .reviews-info h1 {
+        font-size: 36px;
+        line-height: 43px;
+        letter-spacing: 0.05em;
+        color: #000;
+        margin-bottom: 7px; }
+      #reviews .reviews-info h2 {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        color: #000; } }
+  @media screen and (min-width: 1200px) {
+    #reviews .pic {
+      min-height: 450px; }
+    #reviews .reviews-info {
+      margin-right: 10px; }
+      #reviews .reviews-info .description {
+        padding: 0 120px;
+        line-height: 1.3; }
+      #reviews .reviews-info .date span {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        color: #000;
+        font-family: "Raleway", sans-serif; }
+      #reviews .reviews-info .button-group {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
 
 .gnb {
   width: 100%;

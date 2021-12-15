@@ -73,6 +73,7 @@
 
       h1 {
         @include text-style(36, $black);
+        margin-bottom: 7px;
       }
 
       h2 {

@@ -4,7 +4,7 @@
   background-color: $dark;
 
   h1 {
-    @include text-style(36, $white);
+    @include text-style(23, $white);
     margin-bottom: 30px;
     font-style: italic;
     font-weight: 400;
@@ -13,8 +13,7 @@
 
   figure {
     padding-bottom: 258px;
-    background: bottom / cover no-repeat
-      url(../../assets/images/ginger_s_eyes-33.jpg);
+    background: bottom / cover no-repeat url(../../assets/images/banner.jpg);
     border-radius: 23px;
   }
 
@@ -36,6 +35,7 @@
 
   @include responsive(T) {
     h1 {
+      @include text-style(36, $white);
       margin: 10px 0 50px;
     }
 

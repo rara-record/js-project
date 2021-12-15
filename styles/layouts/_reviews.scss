@@ -1,4 +1,156 @@
 #reviews {
   width: 100%;
   height: 100%;
+  background-color: $primary;
+  border-bottom: 1px solid $black;
+
+  .pic {
+    width: 100%;
+    height: 220px;
+  }
+
+  .reviews-info {
+    position: relative;
+    font-weight: 400;
+    text-align: center;
+
+    .title {
+      margin: 25px 0;
+    }
+
+    .description {
+      @include text-style(12, $black);
+      font-style: italic;
+    }
+
+    .date {
+      margin: 25px 0;
+
+      span {
+        @include text-style(11, $black);
+        font-family: $font-second;
+      }
+
+      .author {
+        font-family: $font-main;
+        font-style: italic;
+      }
+
+      i {
+        padding: 0 5px;
+      }
+    }
+
+    h1 {
+      @include text-style(23, $black);
+      font-weight: 400;
+      text-transform: uppercase;
+
+      span {
+        font-style: italic;
+      }
+    }
+
+    h2 {
+      @include text-style(10, $black);
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+
+  .button-group {
+    @include pos-center-x;
+    @include flexbox(between);
+    bottom: -16px;
+    width: 100%;
+    font-size: 0;
+
+    a {
+      display: block;
+    }
+
+    .prev {
+      transform: rotate(-180deg);
+    }
+  }
+
+  @include responsive(T) {
+    article {
+      display: flex;
+      flex-flow: row-reverse;
+    }
+
+    .pic {
+      width: 770px;
+      min-height: 400px;
+
+      img {
+        border-radius: 23px;
+      }
+    }
+
+    .reviews-info {
+      @include column-flexbox;
+      margin-right: 70px;
+
+      .title {
+        margin: 40px 0 60px;
+      }
+
+      .description {
+        @include text-style(17, $black);
+        font-style: italic;
+        margin-bottom: 60px;
+      }
+
+      .date {
+        margin: 40px 0;
+
+        span {
+          @include text-style(12, $black);
+          font-family: $font-second;
+        }
+      }
+
+      .button-group {
+        width: 90%;
+        bottom: 32px;
+      }
+
+      h1 {
+        @include text-style(36, $black);
+        margin-bottom: 7px;
+      }
+
+      h2 {
+        @include text-style(14, $black);
+      }
+    }
+  }
+
+  @include responsive(D) {
+    .pic {
+      min-height: 450px;
+    }
+
+    .reviews-info {
+      margin-right: 10px;
+
+      .description {
+        padding: 0 120px;
+        line-height: 1.3;
+      }
+
+      .date {
+        span {
+          @include text-style(14, $black);
+          font-family: $font-second;
+        }
+      }
+
+      .button-group {
+        @include pos-center;
+      }
+    }
+  }
 }
