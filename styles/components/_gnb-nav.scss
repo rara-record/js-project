@@ -8,7 +8,6 @@
     flex-direction: column;
 
     a {
-      @include text-style(11, $black);
       display: block;
       width: 100%;
       height: 100%;

@@ -34,15 +34,16 @@ $sm-columns: 4;
 $sm-margin: 25px;
 
 $md-columns: 12;
-$md-margin: 15px;
-$md-max-container: 980px + $md-margin * 2;
+$md-margin: 20px;
+$md-max-container: 960px + $md-margin * 2;
 
 $lg-columns: 12;
-$lg-unit: 80px;
+$lg-unit: 75px;
 $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
 @debug $md-max-container;
 
 .inner {
+  position: relative;
   width: 100%;
   padding: 0 $sm-margin;
   margin: 0 auto;
@@ -54,7 +55,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
 
   @include responsive(D) {
     max-width: $lg-max-container;
-    padding: 0 10px;
+    padding: 0;
   }
 }
 
