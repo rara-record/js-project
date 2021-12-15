@@ -10,14 +10,20 @@
 
   .brand-img {
     width: 100%;
+    padding: 8px;
     margin-top: 35px;
     text-align: center;
+    border: 1px solid #000;
+    border-radius: 23px;
 
     figure {
       width: 100%;
-      height: 150px;
+      height: 315px;
       margin-bottom: 5px;
-      border: 1px solid $black;
+
+      img {
+        border-radius: 20px;
+      }
     }
 
     i {
@@ -92,6 +98,10 @@
 
       i {
         display: none;
+      }
+
+      figure {
+        margin-bottom: 0;
       }
     }
 
