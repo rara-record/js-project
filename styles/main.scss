@@ -16,6 +16,7 @@
 
 @import './modules/buttons';
 @import './modules/icons';
+@import './modules/title-common';
 
 @import './layouts/grid';
 @import './layouts/header';
@@ -23,6 +24,8 @@
 @import './layouts/brand';
 @import './layouts/work';
 @import './layouts/reviews';
+@import './layouts/services';
 
 @import './components/gnb-nav';
 @import './components/work-projects';
+@import './components/service-content';

@@ -1,0 +1,32 @@
+#service {
+  width: 100%;
+  height: 100%;
+  background-color: $primary;
+
+  .title-common {
+    margin-bottom: 40px;
+  }
+
+  .description {
+    @include text-style(14, $black);
+    padding: 40px 0;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .btn-out-line {
+    @include pos-center-x;
+  }
+
+  @include responsive(T) {
+    .title-common {
+      position: absolute;
+      top: 0;
+      right: 50px;
+    }
+
+    .description {
+      padding: 60px 0;
+    }
+  }
+}
