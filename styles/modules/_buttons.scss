@@ -1,4 +1,17 @@
 .btn-arrow {
   width: 35px;
   height: 47px;
+
+  svg {
+    fill: $white;
+  }
+}
+
+.btn-out-line {
+  @include text-style(13, $black);
+  width: 114px;
+  height: 36px;
+  font-style: italic;
+  border: 1px solid $black;
+  border-radius: 50%;
 }

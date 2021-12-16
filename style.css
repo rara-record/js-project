@@ -364,11 +364,12 @@ img {
   object-fit: cover; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-weight: 400; }
 
 section {
   position: relative;
-  padding: 70px 0; }
+  padding: 60px 0 100px; }
   @media screen and (min-width: 768px) {
     section {
       padding: 80px 0; } }
@@ -415,6 +416,19 @@ section {
 .btn-arrow {
   width: 35px;
   height: 47px; }
+  .btn-arrow svg {
+    fill: #fffef3; }
+
+.btn-out-line {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: #000;
+  width: 114px;
+  height: 36px;
+  font-style: italic;
+  border: 1px solid #000;
+  border-radius: 50%; }
 
 .ion,
 .ionicons,
@@ -3362,6 +3376,75 @@ section {
 .ion-xbox:before {
   content: '\f30c'; }
 
+.title-common {
+  text-transform: uppercase; }
+  .title-common .title-main {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.05em; }
+    .title-common .title-main::after {
+      position: absolute;
+      top: 3.5px;
+      right: -28px;
+      width: 17px;
+      height: 17px;
+      border: 1px solid #000;
+      border-radius: 50%;
+      content: ''; }
+  .title-common .title-second {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.07em;
+    color: #000;
+    position: relative;
+    font-weight: 400; }
+    .title-common .title-second::after {
+      position: absolute;
+      top: 10px;
+      right: -70px;
+      width: 35%;
+      height: 1px;
+      background: #000;
+      content: ''; }
+  @media screen and (min-width: 768px) {
+    .title-common .title-main {
+      font-size: 36px;
+      line-height: 43px;
+      letter-spacing: 0.05em;
+      color: #000;
+      margin-bottom: 7px; }
+    .title-common .title-second {
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.05em;
+      color: #000; }
+      .title-common .title-second::after {
+        position: absolute;
+        top: 13px;
+        right: -156px;
+        width: 62%;
+        height: 1px;
+        background: #000;
+        content: ''; } }
+  @media screen and (min-width: 1200px) {
+    .title-common .title-main::after {
+      position: absolute;
+      top: 0.5px;
+      right: -56px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #000;
+      border-radius: 50%;
+      content: ''; } }
+
 /* 
   * MOBILE (< 768px) ------------------------------------
   * fixture ---------------------- sm
@@ -3392,6 +3475,7 @@ section {
 .inner {
   position: relative;
   width: 100%;
+  height: 100%;
   padding: 0 25px;
   margin: 0 auto; }
   @media screen and (min-width: 768px) {
@@ -3402,13 +3486,6 @@ section {
     .inner {
       max-width: 1140px;
       padding: 0; } }
-
-section {
-  padding: 60px 0 100px; }
-
-.row {
-  display: flex;
-  flex-wrap: wrap; }
 
 /* header ------------------------------------------------------------------ */
 #header {
@@ -3676,44 +3753,6 @@ section {
   width: 100%;
   height: 100%;
   background-color: #fffef3; }
-  #work .title {
-    text-transform: uppercase; }
-    #work .title h1 {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      font-size: 22px;
-      font-weight: 400;
-      line-height: 1.2;
-      letter-spacing: 0.05em; }
-      #work .title h1::after {
-        position: absolute;
-        top: 3.5px;
-        right: -28px;
-        width: 17px;
-        height: 17px;
-        border: 1px solid #000;
-        border-radius: 50%;
-        content: ''; }
-    #work .title h2 {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 10px;
-      line-height: 15px;
-      letter-spacing: 0.07em;
-      color: #000;
-      position: relative;
-      font-weight: 400; }
-      #work .title h2::after {
-        position: absolute;
-        top: 10px;
-        right: -70px;
-        width: 35%;
-        height: 1px;
-        background: #000;
-        content: ''; }
   #work .description {
     font-size: 11px;
     line-height: 15px;
@@ -3736,100 +3775,22 @@ section {
       bottom: -130px;
       width: 100%;
       padding: 0 15px; }
-      #work .text-box .title {
+      #work .text-box .title-common {
         width: 60%; }
       #work .text-box .description {
         width: 40%;
-        padding: 0 20px; }
-      #work .text-box h1 {
-        font-size: 36px;
-        line-height: 43px;
-        letter-spacing: 0.05em;
-        color: #000;
-        margin-bottom: 7px; }
-      #work .text-box h2 {
-        font-size: 14px;
-        line-height: 17px;
-        letter-spacing: 0.05em;
-        color: #000; }
-        #work .text-box h2::after {
-          position: absolute;
-          top: 13px;
-          right: -156px;
-          width: 62%;
-          height: 1px;
-          background: #000;
-          content: ''; } }
-  @media screen and (min-width: 1200px) {
-    #work .title h1::after {
-      position: absolute;
-      top: 0.5px;
-      right: -56px;
-      width: 40px;
-      height: 40px;
-      border: 1px solid #000;
-      border-radius: 50%;
-      content: ''; } }
-
-#banner {
-  width: 100%;
-  height: 100%;
-  background-color: #33362f; }
-  #banner h1 {
-    font-size: 23px;
-    line-height: 28px;
-    letter-spacing: 0.05em;
-    color: #fffef3;
-    margin-bottom: 30px;
-    font-style: italic;
-    font-weight: 400;
-    text-transform: uppercase; }
-  #banner figure {
-    padding-bottom: 258px;
-    background: bottom/cover no-repeat url(../../assets/images/banner.jpg);
-    border-radius: 23px; }
-  #banner .text-box h2 {
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.05em;
-    color: #fffef3;
-    margin-top: 40px;
-    font-style: italic;
-    font-weight: 400; }
-  #banner .text-box p {
-    font-size: 11px;
-    line-height: 15px;
-    letter-spacing: 0.05em;
-    color: #fffef3;
-    margin: 30px 0 30px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 400; }
-  @media screen and (min-width: 768px) {
-    #banner h1 {
-      font-size: 36px;
-      line-height: 43px;
-      letter-spacing: 0.05em;
-      color: #fffef3;
-      margin: 10px 0 50px; }
-    #banner .banner-info {
-      display: flex; }
-      #banner .banner-info figure {
-        width: 50%;
-        margin-right: 5%; }
-      #banner .banner-info .text-box {
-        width: 45%;
-        padding: 0 50px; }
-        #banner .banner-info .text-box h2 {
-          margin-top: 0; } }
+        padding: 0 20px; } }
 
 #reviews {
   width: 100%;
   height: 100%;
-  background-color: #fffef3;
+  background-color: #33362f;
   border-bottom: 1px solid #000; }
   #reviews .pic {
     width: 100%;
     height: 220px; }
+    #reviews .pic img {
+      border-radius: 23px; }
   #reviews .reviews-info {
     position: relative;
     font-weight: 400;
@@ -3837,10 +3798,11 @@ section {
     #reviews .reviews-info .title {
       margin: 25px 0; }
     #reviews .reviews-info .description {
-      font-size: 12px;
-      line-height: 22px;
-      letter-spacing: 0.1em;
-      color: #000;
+      font-size: 11px;
+      line-height: 15px;
+      letter-spacing: 0.05em;
+      color: #fffef3;
+      font-family: "Raleway", sans-serif;
       font-style: italic; }
     #reviews .reviews-info .date {
       margin: 25px 0; }
@@ -3848,18 +3810,19 @@ section {
         font-size: 11px;
         line-height: 15px;
         letter-spacing: 0.05em;
-        color: #000;
+        color: #fffef3;
         font-family: "Raleway", sans-serif; }
       #reviews .reviews-info .date .author {
         font-family: "Playfair Display", serif;
         font-style: italic; }
       #reviews .reviews-info .date i {
-        padding: 0 5px; }
+        padding: 0 5px;
+        color: #fffef3; }
     #reviews .reviews-info h1 {
       font-size: 23px;
       line-height: 28px;
       letter-spacing: 0.05em;
-      color: #000;
+      color: #fffef3;
       font-weight: 400;
       text-transform: uppercase; }
       #reviews .reviews-info h1 span {
@@ -3868,7 +3831,7 @@ section {
       font-size: 10px;
       line-height: 15px;
       letter-spacing: 0.07em;
-      color: #000;
+      color: #fffef3;
       font-weight: 400;
       text-transform: uppercase; }
   #reviews .button-group {
@@ -3890,66 +3853,171 @@ section {
       display: flex;
       flex-flow: row-reverse; }
     #reviews .pic {
-      width: 770px;
+      width: 40%;
       min-height: 400px; }
       #reviews .pic img {
-        border-radius: 23px; }
+        border-radius: 50%; }
     #reviews .reviews-info {
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      margin-right: 70px; }
+      width: 50%;
+      margin-right: 10%; }
       #reviews .reviews-info .title {
         margin: 40px 0 60px; }
       #reviews .reviews-info .description {
-        font-size: 17px;
-        line-height: 20px;
+        font-size: 13px;
+        line-height: 16px;
         letter-spacing: 0;
-        color: #000;
-        font-style: italic;
-        margin-bottom: 60px; }
+        color: #fffef3;
+        margin-bottom: 60px;
+        letter-spacing: 0.05em; }
       #reviews .reviews-info .date {
         margin: 40px 0; }
         #reviews .reviews-info .date span {
           font-size: 12px;
           line-height: 22px;
           letter-spacing: 0.1em;
-          color: #000;
+          color: #fffef3;
           font-family: "Raleway", sans-serif; }
       #reviews .reviews-info .button-group {
-        width: 90%;
-        bottom: 32px; }
+        bottom: 32px;
+        width: 90%; }
+        #reviews .reviews-info .button-group a {
+          color: #fffef3; }
       #reviews .reviews-info h1 {
         font-size: 36px;
         line-height: 43px;
         letter-spacing: 0.05em;
-        color: #000;
+        color: #fffef3;
         margin-bottom: 7px; }
       #reviews .reviews-info h2 {
         font-size: 14px;
         line-height: 17px;
         letter-spacing: 0.05em;
-        color: #000; } }
+        color: #fffef3; } }
   @media screen and (min-width: 1200px) {
     #reviews .pic {
       min-height: 450px; }
-    #reviews .reviews-info {
+    #reviews .reviews-info .description {
+      padding: 0 120px;
+      line-height: 1.3; }
+    #reviews .reviews-info .date span {
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.05em;
+      color: #fffef3;
+      font-family: "Raleway", sans-serif; }
+    #reviews .reviews-info .button-group {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
+
+#service {
+  width: 100%;
+  height: 100%;
+  background-color: #fffef3; }
+  #service .title-common {
+    margin-bottom: 40px; }
+  #service .description {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #000;
+    padding: 40px 0;
+    font-style: italic;
+    text-align: center; }
+  #service .btn-out-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+  @media screen and (min-width: 768px) {
+    #service .title-common {
+      position: absolute;
+      top: 0;
+      right: 50px; }
+    #service .description {
+      padding: 60px 0; } }
+
+#footer {
+  width: 100%;
+  height: 100%;
+  padding: 30px 0;
+  color: #fffef3;
+  background-color: #33362f; }
+  #footer .content h2 {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    margin: 30px 0;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center; }
+  #footer .content article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #footer .content article .pic {
+      width: 96px;
+      height: 96px; }
+  #footer .sns {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #footer .sns li {
+      padding: 20px 15px; }
+    #footer .sns i {
+      font-size: 20px; }
+  #footer p {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    padding-bottom: 30px;
+    font-style: italic;
+    line-height: 2; }
+  #footer address {
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    font-style: italic;
+    line-height: 2; }
+    #footer address span {
       margin-right: 10px; }
-      #reviews .reviews-info .description {
-        padding: 0 120px;
-        line-height: 1.3; }
-      #reviews .reviews-info .date span {
-        font-size: 14px;
-        line-height: 17px;
-        letter-spacing: 0.05em;
-        color: #000;
-        font-family: "Raleway", sans-serif; }
-      #reviews .reviews-info .button-group {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); } }
+  @media screen and (min-width: 768px) {
+    #footer .content h2 {
+      margin: 0;
+      margin-bottom: 15px; }
+    #footer .content div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-gap: 5px;
+      margin-right: 5px; }
+    #footer .content .sns {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #footer .content .sns li {
+        padding: 20px 15px; }
+    #footer .copyright {
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+      #footer .copyright p {
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 0.1em;
+        flex-direction: row;
+        padding: 0; }
+        #footer .copyright p i {
+          padding: 0 5px; } }
 
 .gnb {
   width: 100%;
@@ -4081,5 +4149,98 @@ section {
         line-height: 22px;
         letter-spacing: 0.1em;
         color: #000; } }
+
+.service-content article {
+  position: relative;
+  margin-bottom: 40px;
+  cursor: pointer; }
+
+.service-content .pic {
+  width: 100%;
+  height: 300px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 23px; }
+  .service-content .pic img {
+    height: 100%;
+    border-radius: 20px; }
+
+.service-content h3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0;
+  color: #000;
+  margin: 5px 0;
+  font-style: italic;
+  font-weight: 400; }
+
+@media screen and (min-width: 768px) {
+  .service-content {
+    display: flex;
+    padding-top: 140px;
+    grid-gap: 25px; }
+    .service-content article {
+      width: calc(100% / 3); }
+    .service-content .pic {
+      height: 330px; }
+    .service-content h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 36px;
+      line-height: 43px;
+      letter-spacing: 0.05em;
+      color: #fffef3;
+      margin: 0;
+      letter-spacing: 0; } }
+
+@media screen and (min-width: 1200px) {
+  .service-content {
+    display: flex;
+    grid-gap: 50px; }
+    .service-content .pic {
+      height: 450px; } }
+
+.footer-gnb {
+  color: #fffef3; }
+  .footer-gnb .gnb-m-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0 10px;
+    border-bottom: 2px solid #fffef3; }
+    .footer-gnb .gnb-m-menu li {
+      width: 33.3333%;
+      padding: 10px 0; }
+      .footer-gnb .gnb-m-menu li:nth-of-type(1), .footer-gnb .gnb-m-menu li:nth-of-type(4) {
+        text-align: left; }
+      .footer-gnb .gnb-m-menu li:nth-of-type(2), .footer-gnb .gnb-m-menu li:nth-of-type(5) {
+        text-align: center; }
+      .footer-gnb .gnb-m-menu li:nth-of-type(3), .footer-gnb .gnb-m-menu li:nth-of-type(6) {
+        text-align: right; }
+    .footer-gnb .gnb-m-menu a {
+      font-size: 12px;
+      line-height: 22px;
+      letter-spacing: 0.1em;
+      padding: 10px;
+      font-family: "Raleway", sans-serif; }
+  .footer-gnb .gnb-d-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 25px;
+    text-align: center;
+    border-bottom: 0; }
+    .footer-gnb .gnb-d-menu a {
+      font-size: 12px;
+      line-height: 22px;
+      letter-spacing: 0.1em;
+      padding: 10px;
+      font-family: "Raleway", sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
