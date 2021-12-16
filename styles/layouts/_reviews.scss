@@ -78,6 +78,10 @@
     .prev {
       transform: rotate(-180deg);
     }
+
+    svg {
+      fill: $white;
+    }
   }
 
   @include responsive(T) {
@@ -89,6 +93,7 @@
     .pic {
       width: 40%;
       min-height: 400px;
+
       img {
         border-radius: 50%;
       }

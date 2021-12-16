@@ -369,7 +369,7 @@ body {
 
 section {
   position: relative;
-  padding: 60px 0 100px; }
+  padding: 60px 0; }
   @media screen and (min-width: 768px) {
     section {
       padding: 80px 0; } }
@@ -416,8 +416,6 @@ section {
 .btn-arrow {
   width: 35px;
   height: 47px; }
-  .btn-arrow svg {
-    fill: #fffef3; }
 
 .btn-out-line {
   font-size: 13px;
@@ -3852,6 +3850,8 @@ section {
       display: block; }
     #reviews .button-group .prev {
       transform: rotate(-180deg); }
+    #reviews .button-group svg {
+      fill: #fffef3; }
   @media screen and (min-width: 768px) {
     #reviews article {
       display: flex;
@@ -3922,17 +3922,10 @@ section {
 #service {
   width: 100%;
   height: 100%;
-  background-color: #fffef3; }
+  background-color: #fffef3;
+  border-bottom: 1px solid #000; }
   #service .title-common {
     margin-bottom: 40px; }
-    #service .title-common .title-second::after {
-      position: absolute;
-      top: 13px;
-      right: -180px;
-      width: 70%;
-      height: 1px;
-      background: #000;
-      content: ''; }
   #service .description {
     font-size: 14px;
     line-height: 17px;
@@ -3946,17 +3939,95 @@ section {
     left: 50%;
     transform: translateX(-50%); }
   @media screen and (min-width: 768px) {
-    #service .title-common {
-      position: absolute;
-      top: 0;
-      right: 50px; }
-    #service .description {
-      padding: 60px 0; } }
+    #service {
+      padding-bottom: 150px; }
+      #service .title-common {
+        position: absolute;
+        top: 0;
+        right: 50px; }
+      #service .description {
+        padding: 70px 0; } }
+
+#contact {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  background-color: #fffef3; }
+  #contact .pic {
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 23px; }
+    #contact .pic img {
+      border-radius: 20px; }
+  #contact h1 {
+    padding: 15px 0;
+    text-align: center; }
+    #contact h1 span {
+      display: block;
+      font-size: 23px;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+      font-style: italic;
+      font-weight: 400;
+      text-align: center; }
+  #contact .link {
+    text-align: center; }
+    #contact .link span {
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase; }
+      #contact .link span i {
+        padding: 0 5px; }
+    #contact .link .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.05em;
+      font-style: italic; }
+      #contact .link .btn a {
+        padding-right: 5px;
+        font-weight: 600; }
+      #contact .link .btn .btn-arrow {
+        position: relative;
+        top: 4px; }
+  @media screen and (min-width: 768px) {
+    #contact {
+      padding-bottom: 80px; }
+      #contact .inner {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      #contact .pic {
+        width: 50%;
+        height: 260px; }
+      #contact .right {
+        width: 50%; }
+      #contact h1 span {
+        font-size: 36px;
+        line-height: 43px;
+        letter-spacing: 0.05em;
+        letter-spacing: 0.05em; }
+      #contact .link {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        #contact .link .btn {
+          font-size: 17px;
+          line-height: 20px;
+          letter-spacing: 0;
+          position: relative;
+          top: -1px; }
+          #contact .link .btn a {
+            letter-spacing: 0.05em; } }
 
 #footer {
   width: 100%;
   height: 100%;
-  padding: 30px 0;
   color: #fffef3;
   background-color: #33362f; }
   #footer .content h2 {
@@ -4003,33 +4074,35 @@ section {
     #footer address span {
       margin-right: 10px; }
   @media screen and (min-width: 768px) {
-    #footer .content h2 {
-      margin: 0;
-      margin-bottom: 15px; }
-    #footer .content div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      grid-gap: 5px;
-      margin-right: 5px; }
-    #footer .content .sns {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      #footer .content .sns li {
-        padding: 20px 15px; }
-    #footer .copyright {
-      display: flex;
-      align-items: center;
-      justify-content: space-around; }
-      #footer .copyright p {
-        font-size: 12px;
-        line-height: 22px;
-        letter-spacing: 0.1em;
-        flex-direction: row;
-        padding: 0; }
-        #footer .copyright p i {
-          padding: 0 5px; } }
+    #footer {
+      padding: 30px 0; }
+      #footer .content h2 {
+        margin: 0;
+        margin-bottom: 15px; }
+      #footer .content div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 5px;
+        margin-right: 5px; }
+      #footer .content .sns {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        #footer .content .sns li {
+          padding: 20px 15px; }
+      #footer .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        #footer .copyright p {
+          font-size: 12px;
+          line-height: 22px;
+          letter-spacing: 0.1em;
+          flex-direction: row;
+          padding: 0; }
+          #footer .copyright p i {
+            padding: 0 5px; } }
 
 .gnb {
   width: 100%;
@@ -4227,7 +4300,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 40px 0 10px;
+    padding: 20px 0 10px;
     border-bottom: 2px solid #fffef3; }
     .footer-gnb .gnb-m-menu li {
       width: 33.3333%;
