@@ -5,6 +5,18 @@
 
   .title-common {
     margin-bottom: 40px;
+
+    .title-second {
+      &::after {
+        position: absolute;
+        top: 13px;
+        right: -180px;
+        width: 70%;
+        height: 1px;
+        background: #000;
+        content: '';
+      }
+    }
   }
 
   .description {

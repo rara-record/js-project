@@ -429,6 +429,8 @@ section {
   font-style: italic;
   border: 1px solid #000;
   border-radius: 50%; }
+  .btn-out-line a {
+    font-weight: 600; }
 
 .ion,
 .ionicons,
@@ -3429,7 +3431,7 @@ section {
       .title-common .title-second::after {
         position: absolute;
         top: 13px;
-        right: -156px;
+        right: -159px;
         width: 62%;
         height: 1px;
         background: #000;
@@ -3703,6 +3705,8 @@ section {
     font-weight: 400;
     letter-spacing: 0.04em;
     text-align: center; }
+    #brand h3 i {
+      padding-right: 5px; }
     #brand h3 span {
       text-transform: uppercase; }
   @media screen and (min-width: 768px) {
@@ -3921,6 +3925,14 @@ section {
   background-color: #fffef3; }
   #service .title-common {
     margin-bottom: 40px; }
+    #service .title-common .title-second::after {
+      position: absolute;
+      top: 13px;
+      right: -180px;
+      width: 70%;
+      height: 1px;
+      background: #000;
+      content: ''; }
   #service .description {
     font-size: 14px;
     line-height: 17px;
@@ -4092,6 +4104,9 @@ section {
   padding: 10px 0;
   text-align: center; }
   .work-projects figcaption h2 {
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0;
     color: #000;
     font-style: italic;
     font-weight: 400; }
