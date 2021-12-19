@@ -22,6 +22,17 @@
 
   <!-- style -->
   <link rel="stylesheet" href="./style.css">
+
+  <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_jnl37p9NiQJCJmaABbNA3");
+    })();
+  </script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script defer src="js/_contact.js"></script>
 </head>
 
 <body>
@@ -107,7 +118,18 @@
     </section>
 
     <section class="email">
-
+      <div class="inner">
+        <h1 class="visually-hidden">Contact me</h1>
+        <form id="contact-form">
+          <input type="hidden" name="contact_number">
+          <input type="text" name="to_name" required placeholder="FULL NAME">
+          <input type="text" name="contact" required placeholder="PHONE">
+          <input type="text" name="from_name" required placeholder="EMAIL ADDRESS">
+          <input type="text" name="location" placeholder="LOCATION OF EVENT">
+          <textarea name="message_html" cols="30" rows="5" required placeholder="MESSAGE"></textarea>
+          <input class="btn-out-line" type="submit" value="send Me Love"></input>
+        </form>
+      </div>
     </section>
   </main>
 
