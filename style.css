@@ -4163,6 +4163,93 @@ section {
       letter-spacing: 0.05em;
       padding: 0 40px; } }
 
+.contact {
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  background-color: #fffef3; }
+  .contact .left {
+    padding: 40px 0 30px;
+    text-align: center; }
+    .contact .left h1 {
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.05em;
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
+      line-height: 1.8;
+      letter-spacing: 0.1em; }
+      .contact .left h1 span {
+        display: block;
+        font-family: "Raleway", sans-serif; }
+    .contact .left h2 {
+      font-size: 23px;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+      padding: 10px 0;
+      font-weight: 400; }
+      .contact .left h2 .italic {
+        font-style: italic; }
+    .contact .left p {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.05em;
+      bottom: 30px;
+      width: 100%;
+      font-style: italic; }
+  .contact .right {
+    padding-bottom: 100px; }
+    .contact .right .pic {
+      width: 100%;
+      height: 300px;
+      padding: 5px;
+      border: 1px solid #000; }
+  @media screen and (min-width: 768px) {
+    .contact .contact-visual-sub {
+      padding: 0; }
+      .contact .contact-visual-sub .inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap; }
+    .contact .left {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 50%;
+      height: 400px;
+      padding: 50px 0;
+      border-right: 1px solid #000; }
+      .contact .left h2 {
+        font-size: 36px;
+        line-height: 43px;
+        letter-spacing: 0.05em; }
+      .contact .left p {
+        position: static;
+        left: 0;
+        transform: translateX(0); }
+    .contact .right {
+      width: 50%;
+      height: 400px;
+      padding: 10px;
+      padding-bottom: 0; }
+      .contact .right .pic {
+        width: 100%;
+        height: 100%;
+        border: 0; } }
+  @media screen and (min-width: 1200px) {
+    .contact .left {
+      height: 480px; }
+      .contact .left h2 {
+        font-size: 50px;
+        line-height: 1.2em; }
+    .contact .right {
+      height: 480px; } }
+
 .gnb {
   width: 100%;
   height: 100%;
@@ -4501,5 +4588,7 @@ section {
   background-color: #ece8d8; }
   .about-tab dl {
     position: relative; }
+    .about-tab dl dt {
+      position: absolute; }
 
 /*# sourceMappingURL=style.css.map */
