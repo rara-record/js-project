@@ -29,7 +29,6 @@
 
     .gnb-menu-item {
       @include flexbox;
-      text-transform: uppercase;
 
       a {
         @include text-style(13);
