@@ -33,7 +33,7 @@
   }
 
   .description {
-    @include text-style(10, $black);
+    @include text-style(11, $black);
     font-family: $font-second;
     text-align: justify;
   }
@@ -48,8 +48,8 @@
     @include inline-flexbox;
 
     span {
-      @include text-style(10, $black);
       position: relative;
+      @include text-style(11, $black);
       padding-right: 10px;
       font-weight: 400;
       text-transform: uppercase;
@@ -92,6 +92,7 @@
     }
 
     span {
+      position: relative;
       text-transform: uppercase;
     }
   }

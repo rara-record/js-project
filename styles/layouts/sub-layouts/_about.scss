@@ -3,71 +3,7 @@
   height: 100%;
   background-color: $white;
 
-  .team {
-    .title {
-      h1 {
-        @include text-style(23);
-        font-weight: 400;
-        text-transform: uppercase;
-
-        span {
-          display: block;
-          @include text-style(12);
-          font-family: $font-second;
-          line-height: 0.5em;
-        }
-      }
-    }
-  }
-
-  @include responsive(T) {
-    .team {
-      padding: 40px;
-
-      .title {
-        @include flexbox(around);
-
-        h1 {
-          @include text-style(23);
-          font-weight: 400;
-          text-transform: uppercase;
-
-          span {
-            display: block;
-            @include text-style(12);
-            font-family: $font-second;
-            line-height: 0.5em;
-          }
-        }
-
-        ul {
-          @include flexbox;
-
-          li {
-            padding: 0 10px;
-            font-weight: 400;
-            text-transform: uppercase;
-            @include text-style(17);
-          }
-        }
-      }
-    }
-  }
-
-  @include responsive(D) {
-    .team {
-      .title {
-        h1 {
-          @include text-style(36);
-        }
-
-        ul {
-          li {
-            @include text-style(23);
-            padding: 0 40px;
-          }
-        }
-      }
-    }
+  .about-title {
+    padding: 30px 0;
   }
 }

@@ -117,6 +117,8 @@
   }
 
   @include responsive(D) {
+    padding: 120px 0;
+
     .right {
       @include column-flexbox;
       align-items: flex-start;

@@ -32,9 +32,10 @@
       text-transform: uppercase;
 
       a {
-        @include text-style(12, $black);
+        @include text-style(14);
         padding: 15px;
         font-family: $font-second;
+        letter-spacing: 0.1em;
       }
     }
 
@@ -43,6 +44,10 @@
 
       button {
         padding: 10px;
+
+        i {
+          font-size: 17px;
+        }
       }
     }
   }
