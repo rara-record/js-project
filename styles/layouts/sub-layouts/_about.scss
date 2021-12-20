@@ -3,7 +3,58 @@
   height: 100%;
   background-color: $white;
 
-  .about-title {
-    padding: 30px 0;
+  .company {
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      @include text-style(23);
+      margin-bottom: 25px;
+      font-weight: 400;
+    }
+
+    p {
+      @include text-style(13);
+      font-family: $font-second;
+    }
+  }
+
+  @include responsive(T) {
+    .company {
+      h1 {
+        @include text-style(36);
+      }
+
+      p {
+        @include text-style(14);
+        padding: 0 100px;
+      }
+
+      .wrap {
+        @include flexbox;
+        position: relative;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 1px;
+          height: 100%;
+          background: $black;
+          content: '';
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+
+  @include responsive(D) {
+    .company {
+      p {
+        padding: 0 200px;
+      }
+    }
   }
 }

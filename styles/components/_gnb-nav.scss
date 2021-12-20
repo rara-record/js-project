@@ -32,7 +32,7 @@
       text-transform: uppercase;
 
       a {
-        @include text-style(14);
+        @include text-style(13);
         padding: 15px;
         font-family: $font-second;
         letter-spacing: 0.1em;

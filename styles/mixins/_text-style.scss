@@ -46,6 +46,12 @@
   letter-spacing: $letter-spacing-23;
 }
 
+@mixin text-style-28() {
+  font-size: $font-size-28;
+  line-height: $line-height-28;
+  letter-spacing: $letter-spacing-28;
+}
+
 @mixin text-style-36() {
   font-size: $font-size-36;
   line-height: $line-height-36;
@@ -76,6 +82,9 @@
   }
   @if ($size == 23) {
     @include text-style-23;
+  }
+  @if ($size == 28) {
+    @include text-style-28;
   }
   @if ($size == 36) {
     @include text-style-36;
