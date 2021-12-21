@@ -52,7 +52,7 @@
 
   @include responsive(T) {
     .contact-visual-sub {
-      padding: 0;
+      padding-bottom: 0;
 
       .inner {
         @include flexbox;

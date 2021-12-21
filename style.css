@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -369,10 +370,13 @@ body {
 
 section {
   position: relative;
-  padding: 60px 0; }
+  padding: 120px 0 60px; }
   @media screen and (min-width: 768px) {
     section {
       padding: 80px 0; } }
+  @media screen and (min-width: 1200px) {
+    section {
+      padding: 90px 0; } }
 
 .visually-hidden {
   position: absolute !important;
@@ -3495,7 +3499,7 @@ section {
   width: 100%;
   height: 70px;
   background-color: #fffef3;
-  border-bottom: 2px solid #000; }
+  border-bottom: 1px solid #000; }
   #header .logo {
     position: absolute;
     top: 50%;
@@ -4184,6 +4188,88 @@ section {
     .about .company p {
       padding: 0 200px; } }
 
+.community {
+  width: 100%;
+  height: 100%;
+  background-color: #fffef3; }
+  .community .inner table {
+    width: 100%;
+    border-bottom: 2px solid #111;
+    margin-bottom: 50px;
+    border-collapse: collapse; }
+    .community .inner table tr:nth-of-type(even) {
+      background: #eee; }
+    .community .inner table tr th {
+      padding: 15px;
+      background: #444;
+      color: #fff; }
+      .community .inner table tr th:nth-of-type(1) {
+        width: 10%; }
+      .community .inner table tr th:nth-of-type(3) {
+        width: 15%; }
+      .community .inner table tr th:nth-of-type(4) {
+        width: 15%; }
+    .community .inner table tr td {
+      padding: 13px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      color: #555; }
+      .community .inner table tr td:nth-of-type(2) {
+        text-align: left; }
+        .community .inner table tr td:nth-of-type(2) a {
+          float: left;
+          color: #333;
+          font-family: 'arial';
+          line-height: 1.4; }
+      .community .inner table tr td:nth-of-type(3) {
+        font-family: '맑은 고딕'; }
+    .community .inner table tr:hover td {
+      background: lightcyan; }
+  .community .inner .pagination {
+    width: 100%;
+    text-align: center; }
+    .community .inner .pagination::after {
+      content: '';
+      display: block;
+      clear: both; }
+    .community .inner .pagination .prev {
+      float: left;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: #555;
+      font-size: 20px;
+      color: #eee;
+      text-align: center;
+      line-height: 30px; }
+    .community .inner .pagination .next {
+      float: right;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: #555;
+      font-size: 20px;
+      color: #eee;
+      text-align: center;
+      line-height: 30px; }
+    .community .inner .pagination .numbers {
+      display: inline-block;
+      text-align: center;
+      font-size: 0; }
+      .community .inner .pagination .numbers a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #888;
+        font: 11px/30px 'arial';
+        color: #666;
+        text-align: center;
+        margin: 0 5px;
+        transition: 0.5s; }
+        .community .inner .pagination .numbers a:hover {
+          background: #666;
+          color: #fff; }
+
 .contact {
   width: 100%;
   height: 100%;
@@ -4228,7 +4314,7 @@ section {
       border: 1px solid #000; }
   @media screen and (min-width: 768px) {
     .contact .contact-visual-sub {
-      padding: 0; }
+      padding-bottom: 0; }
       .contact .contact-visual-sub .inner {
         display: flex;
         align-items: center;
@@ -4583,6 +4669,7 @@ section {
       font-family: "Raleway", sans-serif; }
 
 .about-visual-sub {
+  padding-top: 150px;
   border-bottom: 1px solid #000; }
   .about-visual-sub .title {
     position: absolute;
@@ -4646,7 +4733,7 @@ section {
       width: 45%;
       margin-right: 5%; }
       .about-visual-sub .left .pic {
-        height: 600px;
+        height: 500px;
         max-width: 100%; }
       .about-visual-sub .left p {
         font-size: 13px;
@@ -4678,7 +4765,9 @@ section {
         font-weight: 400; } }
   @media screen and (min-width: 1200px) {
     .about-visual-sub {
-      padding: 120px 0; }
+      padding-top: 160px; }
+      .about-visual-sub .left .pic {
+        height: 600px; }
       .about-visual-sub .right {
         display: flex;
         align-items: center;
