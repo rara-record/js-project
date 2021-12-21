@@ -5,10 +5,33 @@
 }
 
 .gnb-d {
+  @include flexbox(between);
+  height: 100%;
+  margin-left: 350px;
+
   #gnb-list {
+    @include flexbox(between);
+    width: 550px;
+
+    a {
+      @include text-style(17);
+      padding: 10px;
+      font-family: $font-second;
+      letter-spacing: 0.04em;
+    }
   }
 
   .gnb-util {
+    @include flexbox(between);
+
+    button {
+      margin-left: 20px;
+    }
+
+    i {
+      font-size: 20px;
+      color: $black;
+    }
   }
 }
 
@@ -26,8 +49,8 @@
 
   span {
     @include pos-center;
-    width: 35px;
-    height: 4px;
+    width: 40px;
+    height: 3px;
     overflow: hidden;
     background: $black;
     border-radius: 2px;

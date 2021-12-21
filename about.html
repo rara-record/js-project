@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABOUT</title>
 
-  <!-- ionicons -->
+  <!-- ionics -->
   <link rel="stylesheet" href="https://unpkg.com/ionicons-css@5.2.1/dist/icon.css">
 
   <!-- fontawesome -->
@@ -28,54 +28,62 @@
   <!-- Header -->
   <header id="header">
     <div class="inner">
-      <!-- gnb -->
-      <nav class="gnb">
-        <h1 class="logo"><a href="index.html">lorem</a></h1>
+      <h1 class="logo"><a href="index.html">BORA</a></h1>
 
-        <div class="gnb-m-menu sm-only">
-          <a href="#">MENU</a>
-          <a href="#">GET IN TOUCH</a>
-        </div>
+      <!--gnb Mobile -->
+      <nav class="gnb-m lg-hidden">
 
-        <div class="gnb-d-menu sm-hidden">
-          <ul class="gnb-menu-list">
-            <li class="gnb-menu-item"><a href="about.html">About</a></li>
-            <li class="gnb-menu-item"><a href="#">Youtube</a></li>
-            <li class="gnb-menu-item"><a href="#">Gallery</a></li>
-            <li class="gnb-menu-item"><a href="#">Community</a></li>
-            <li class="gnb-menu-item"><a href="contact.html">Contact</a></li>
-          </ul>
-
-          <div class="gnb-util">
-
-            <div class="button-search">
-              <button class="button-icon" type=" button" aria-label="검색창 열기 버튼">
-                <i class="icon ion-android-search" aria-hidden="true"></i>
-              </button>
-            </div>
-
-            <div class="button-cart">
-              <button class="button-icon" type=" button" aria-label="장바구니 열기 버튼">
-                <i class="ion-bag" aria-hidden="true"></i>
-              </button>
-            </div>
-
-            <div class="button-user">
-              <button class="button-icon" type=" button" aria-label="로그인 페이지">
-                <a class="button-icon" href="#">
-                  <i class="ion-person" aria-hidden="true"></i>
-                </a>
-              </button>
-            </div>
-
-          </div>
-        </div>
-
+        <ul id="gnb-list">
+          <li class="gnb-menu-item"><a href="about.html">About</a></li>
+          <li class="gnb-menu-item"><a href="#">Youtube</a></li>
+          <li class="gnb-menu-item"><a href="#">Gallery</a></li>
+          <li class="gnb-menu-item"><a href="#">Community</a></li>
+          <li class="gnb-menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
+
+      <!--gnb Desktop -->
+      <nav class="gnb-d lg-only">
+
+        <ul id="gnb-list">
+          <li class="gnb-menu-item"><a href="about.html">About</a></li>
+          <li class="gnb-menu-item"><a href="#">Youtube</a></li>
+          <li class="gnb-menu-item"><a href="#">Gallery</a></li>
+          <li class="gnb-menu-item"><a href="#">Community</a></li>
+          <li class="gnb-menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="gnb-util">
+          <button class="button-search" type=" button" aria-label="검색창 열기 버튼">
+            <a href="#">
+              <i class="ion-ios-search-strong" aria-hidden="true"></i>
+            </a>
+          </button>
+
+          <button class="button-cart" type=" button" aria-label="장바구니 열기 버튼">
+            <i class="ion-bag" aria-hidden="true"></i>
+          </button>
+
+          <button class="button-user" type=" button" aria-label="로그인 페이지">
+            <a class="button-icon" href="#">
+              <i class="ion-log-in" aria-hidden="true"></i>
+            </a>
+          </button>
+        </div>
+      </nav>
+
+      <button class="mobile-menu-btn lg-hidden">
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </button>
     </div>
 
     <!-- // gnb -->
   </header>
+
 
   <!-- content -->
   <main class="content about">

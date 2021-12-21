@@ -1,5 +1,6 @@
 #visual {
   width: 100%;
+  padding-top: 120px;
   background: $primary;
   border-bottom: 1px solid $black;
 
@@ -34,6 +35,8 @@
 
     span {
       padding: 0 2px;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
     }
 
     &::after {
@@ -71,9 +74,25 @@
     }
   }
 
+  &.show {
+    .description {
+      span {
+        opacity: 1;
+
+        @for $i from 1 through 11 {
+          &:nth-of-type(#{$i}) {
+            transition-delay: (0.3s * $i) - 0.3s;
+          }
+        }
+      }
+    }
+  }
+
   @include responsive(T) {
+    padding-top: 160px;
+
     .inner {
-      @include flexbox;
+      @include flexbox(between);
 
       .left {
         width: 50%;
