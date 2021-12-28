@@ -4,6 +4,26 @@
   padding: 0;
   background-color: $black;
 
+  .visual-title {
+    @include pos-center;
+    top: 43%;
+    z-index: 100;
+
+    h1 {
+      transform: rotate(-3deg);
+
+      span {
+        letter-spacing: -0.05em;
+        font-family: 'Allura', cursive;
+        font-size: 90px;
+        color: #fff;
+        font-weight: 400;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+    }
+  }
+
   .banner-img {
     opacity: 0.7;
 
@@ -31,7 +51,8 @@
       height: 0;
       padding: 0;
       color: #fff;
-      background-color: #a03131;
+      // background-color: #a03131;
+      background: linear-gradient(to top, #a03131, transparent);
       transition: all ease 0.5s;
 
       p {
@@ -68,19 +89,39 @@
       }
 
       &:nth-child(2) {
-        background-color: #31a096;
+        // background-color: #31a096;
+        background: linear-gradient(to top, #31a096, transparent);
       }
 
       &:nth-child(3) {
-        background-color: #b7a54b;
+        // background-color: #b7a54b;
+        background: linear-gradient(to top, #b7a54b, transparent);
       }
 
       &:nth-child(4) {
-        background-color: #7c4f80;
+        // background-color: #7c4f80;
+        background: linear-gradient(to top, #7c4f80, transparent);
       }
 
       &:nth-child(5) {
-        background-color: #735757;
+        // background-color: #735757;
+        background: linear-gradient(to top, #735757, transparent);
+      }
+    }
+  }
+
+  &.show {
+    .visual-title {
+      h1 {
+        span {
+          opacity: 1;
+
+          @for $i from 1 through 25 {
+            &:nth-of-type(#{$i}) {
+              transition-delay: (0.1s * $i) - 0.1s;
+            }
+          }
+        }
       }
     }
   }

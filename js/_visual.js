@@ -1,5 +1,5 @@
-// const visual = document.querySelector('#visual');
-// visual.classList.add('show');
+const visual = document.querySelector('#visual')
+visual.classList.add('show')
 
 const initImgContainer = document.querySelector('.banner-img')
 const intImg = initImgContainer.querySelector('img')
@@ -12,7 +12,6 @@ strip.forEach((item) => {
     e.preventDefault()
 
     let currentImage = item.dataset.image
-    console.log(currentImage)
     intImg.setAttribute('src', `./assets/images/${currentImage}`)
     intImg.style.opacity = '1'
   })
@@ -21,5 +20,7 @@ strip.forEach((item) => {
     e.preventDefault()
 
     intImg.style.opacity = '0.8'
+    console.log(intImg)
+    intImg.setAttribute('src', initImgSrc)
   })
 })
