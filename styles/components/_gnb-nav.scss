@@ -9,10 +9,11 @@
   height: 100%;
   margin-left: 350px;
 
-  #gnb-list {
+#gnb-list {
+
     @include flexbox(between);
     width: 550px;
-
+    
     a {
       @include text-style(17);
       padding: 10px;
